@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+p,
+button,
+input {
+    font-size: 16px;
+}
+section{
+    margin: 60px auto;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav-bar>img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    margin: auto 50px;
+}
+
+ul li {
+    display: inline;
+    margin: auto 24px auto 0;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color:rgb(221, 134, 3);
+}
+
+.container {
+    margin: 30px 20%;
+}
+#start{
+    margin-top: 120px;
+}
+#start h1 {
+    text-align: center;
+}
+
+.start-field {
+    text-align: center;
+}
+
+.start-field input {
+    width: 300px;
+    height: 40px;
+}
+
+.btn {
+    border: none;
+    background-color: orange;
+    border-radius: 2px;
+    width: 120px;
+    height: 40px;
+    outline: none;
+}
+.btn:hover{
+    background-color: #f57c0a;
+}
+
+.features {
+    display: flex;
+}
+
+.feature-img {
+    width: 60px;
+    height: 60px;
+    margin: auto 60px auto 0;
+}
+
+.description h2 {
+    margin-bottom: 0;
+}
+
+.description p {
+    margin-top: 0;
+}
+
+#how-it-works{
+    text-align: center;
+}
+
+/* section pricing cards */
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 33%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.card-header{
+    background-color: lightgrey;
+    padding: 15px 0;
+}
+.card p{
+    margin-top: 0;
+}
+.card .btn{
+    margin: 15px auto;
+}
+footer{
+    background-color: lightgrey;
+    height: 120px;
+    text-align: right;
+    padding: 15px;
+}
+footer p{
+    color: grey;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        font-size: 13px;
+        text-align: center;
+    }
+    section{
+        margin: 15px;
+    }
+    
+    .container{
+        margin: 15px;
+    }
+    .btn{
+        margin-top: 15px;
+    }
+    #nav-bar, .cards, .features{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #nav-bar image{
+        visibility: hidden;
+    }
+    .feature-img{
+        margin: 15px auto;
+        width: 40px;
+        height: 40px;
+    }
+    iframe{
+        width: 300px;
+    }
+    .card{
+        width: 90%;
+        margin: 15px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
